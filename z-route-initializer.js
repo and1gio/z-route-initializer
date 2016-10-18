@@ -7,8 +7,9 @@ module.exports = {
             require(app.folderPath.app.root + beforeRoute.rootDir + '/' + beforeRoute.middleware[i])(app);
         }
 
-        for (var i in app.config.zRoute) {
-            var module = require(app.folderPath.route + app.config.zRoute[i]);
+        var routes = app.config.zRoute.routes;
+        for (var i in routes) {
+            var module = require(app.folderPath.app.root + app.config.zRoute.rootDir + '/' + routes[i]);
             app.express.use(i, module(app));
         }
 
