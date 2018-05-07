@@ -1,21 +1,21 @@
 {
     "name": "z-route-initializer",
-    "description": "Z Route Initializer",
-    "version": "0.0.2",
+    "description": "Route Initializer for z-app framework",
+    "version": "0.0.3",
     "author": {
         "name": "Giorgi Maisuradze"
+    },
+    "homepage": "https://github.com/and1gio/z-route-initializer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/and1gio/z-route-initializer.git"
     },
     "maintainers": [
         {
             "name": "and1gio",
             "email": "g.maisuradze88@gmail.com"
-        },
-        {
-            "name": "levansuper",
-            "email": "l.basharuli@gmail.com"
         }
     ],
-    "dependencies": {
-    },
+    "dependencies": {},
     "main": "z-route-initializer.js"
 }
