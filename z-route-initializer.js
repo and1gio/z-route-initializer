@@ -2,7 +2,7 @@
 
 module.exports = {
     run: (app, next) => {
-        if (app.config.zMiddleware && pp.config.zMiddleware.beforeRoute) {
+        if (app.config.zMiddleware && app.config.zMiddleware.beforeRoute) {
             const beforeRoute = app.config.zMiddleware.beforeRoute;
             for (let middleware of beforeRoute.middleware) {
                 require(app.folderPath.app.root + beforeRoute.rootDir + '/' + middleware)(app);
